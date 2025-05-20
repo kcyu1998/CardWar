@@ -50,11 +50,13 @@ struct ContentView: View {
                     else if cpuCardNum > playerCardNum {
                         cpuScore += 1 }
                 }, label: {
-                   
-                    Image("dealbutton").resizable().scaledToFit()
+                    Image(systemName: "target")
+                        .resizable()
+                        .scaledToFit()
+                        .foregroundColor(.red)
+                       
+                        .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
                             .padding(15)
-                           
-                           
                             .cornerRadius(15)
                     
                 })
